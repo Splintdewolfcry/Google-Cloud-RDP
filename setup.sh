@@ -3,6 +3,7 @@ printf "Installing RDP Be Patient..." >&2
 {
 sudo useradd -m NAHID
 sudo adduser NAHID sudo
+echo 'nahid added'
 echo 'NAHID:1234' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 echo "before system update"
