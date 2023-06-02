@@ -5,9 +5,12 @@ sudo useradd -m NAHID
 sudo adduser NAHID sudo
 echo 'NAHID:1234' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
+echo "before system update"
 sudo apt update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+echo 'remote desktop downloaded'
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
+echo 'remote desktop installed'
 sudo apt install --assume-yes --fix-broken
 printf "chrome remote desktop is installed and system updated"
 sudo DEBIAN_FRONTEND=noninteractive \
