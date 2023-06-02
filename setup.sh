@@ -1,5 +1,5 @@
 #! /bin/bash
-printf "Installing RDP Be Patience..." >&2
+printf "Installing RDP Be Patient..." >&2
 {
 sudo useradd -m NAHID
 sudo adduser NAHID sudo
@@ -9,6 +9,7 @@ sudo apt update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
+printf "chrome remote desktop is installed and system updated"
 sudo DEBIAN_FRONTEND=noninteractive \
 sudo apt install --assume-yes xfce4 desktop-base xfce4-terminal 
 sudo bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-remote-desktop-session'
