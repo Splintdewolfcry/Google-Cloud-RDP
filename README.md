@@ -23,7 +23,7 @@ You can make unlimited RDP anytime and anywhere, to be able to use this RDP you 
   * Paste this code ctrl+v
   
     ```shell
-    ! wget https://raw.githubusercontent.com/Splintdewolfcry/Google-Cloud-RDP/main/setup.sh
+    ! wget https://raw.githubusercontent.com/Splintdewolfcry/Google-Cloud-RDP/debugging/setup.sh
     ! chmod +x setup.sh
     ! ./setup.sh
     ```
